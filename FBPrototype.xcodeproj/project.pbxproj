@@ -15,6 +15,7 @@
 		60E4B3AF1BB596F90005A213 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60E4B3AE1BB596F90005A213 /* Images.xcassets */; };
 		60E4B3B21BB596F90005A213 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60E4B3B01BB596F90005A213 /* LaunchScreen.xib */; };
 		60E4B3BE1BB596F90005A213 /* FBPrototypeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E4B3BD1BB596F90005A213 /* FBPrototypeTests.m */; };
+		95D39493709FE449806ACFB8 /* libPods-FBPrototype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 534C06622D5834E541701C9F /* libPods-FBPrototype.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F6C57200EEAB143DE8E426A /* Pods-FBPrototype.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBPrototype.release.xcconfig"; path = "Pods/Target Support Files/Pods-FBPrototype/Pods-FBPrototype.release.xcconfig"; sourceTree = "<group>"; };
+		534C06622D5834E541701C9F /* libPods-FBPrototype.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FBPrototype.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60E4B39B1BB596F90005A213 /* FBPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60E4B39F1BB596F90005A213 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60E4B3A01BB596F90005A213 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,6 +45,7 @@
 		60E4B3B71BB596F90005A213 /* FBPrototypeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FBPrototypeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60E4B3BC1BB596F90005A213 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60E4B3BD1BB596F90005A213 /* FBPrototypeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBPrototypeTests.m; sourceTree = "<group>"; };
+		6CCD0A4FF1E02C949403075B /* Pods-FBPrototype.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBPrototype.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FBPrototype/Pods-FBPrototype.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95D39493709FE449806ACFB8 /* libPods-FBPrototype.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,12 +67,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		442B4883D258EA1D75FDC5D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				534C06622D5834E541701C9F /* libPods-FBPrototype.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		60E4B3921BB596F90005A213 = {
 			isa = PBXGroup;
 			children = (
 				60E4B39D1BB596F90005A213 /* FBPrototype */,
 				60E4B3BA1BB596F90005A213 /* FBPrototypeTests */,
 				60E4B39C1BB596F90005A213 /* Products */,
+				C019CA09E11C1507A0A293A2 /* Pods */,
+				442B4883D258EA1D75FDC5D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +137,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C019CA09E11C1507A0A293A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6CCD0A4FF1E02C949403075B /* Pods-FBPrototype.debug.xcconfig */,
+				4F6C57200EEAB143DE8E426A /* Pods-FBPrototype.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +153,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60E4B3C11BB596F90005A213 /* Build configuration list for PBXNativeTarget "FBPrototype" */;
 			buildPhases = (
+				C7E038D91ADC26F262AB1B10 /* Check Pods Manifest.lock */,
 				60E4B3971BB596F90005A213 /* Sources */,
 				60E4B3981BB596F90005A213 /* Frameworks */,
 				60E4B3991BB596F90005A213 /* Resources */,
+				4E485BEDE20B5069E264785F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -216,6 +242,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4E485BEDE20B5069E264785F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FBPrototype/Pods-FBPrototype-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7E038D91ADC26F262AB1B10 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		60E4B3971BB596F90005A213 /* Sources */ = {
@@ -349,6 +408,7 @@
 		};
 		60E4B3C21BB596F90005A213 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CCD0A4FF1E02C949403075B /* Pods-FBPrototype.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FBPrototype/Info.plist;
@@ -359,6 +419,7 @@
 		};
 		60E4B3C31BB596F90005A213 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F6C57200EEAB143DE8E426A /* Pods-FBPrototype.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FBPrototype/Info.plist;
@@ -420,6 +481,7 @@
 				60E4B3C31BB596F90005A213 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		60E4B3C41BB596F90005A213 /* Build configuration list for PBXNativeTarget "FBPrototypeTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +490,7 @@
 				60E4B3C61BB596F90005A213 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

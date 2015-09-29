@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6064AD371BBAD4C500ED65F3 /* FBFunLoginDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 6064AD351BBAD4C500ED65F3 /* FBFunLoginDialog.m */; settings = {ASSET_TAGS = (); }; };
+		6064AD381BBAD4C500ED65F3 /* FBFunLoginDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6064AD361BBAD4C500ED65F3 /* FBFunLoginDialog.xib */; settings = {ASSET_TAGS = (); }; };
 		60E4B3A11BB596F90005A213 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E4B3A01BB596F90005A213 /* main.m */; };
 		60E4B3A41BB596F90005A213 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E4B3A31BB596F90005A213 /* AppDelegate.m */; };
 		60E4B3A71BB596F90005A213 /* FBPrototype.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 60E4B3A51BB596F90005A213 /* FBPrototype.xcdatamodeld */; };
@@ -31,6 +33,9 @@
 /* Begin PBXFileReference section */
 		4F6C57200EEAB143DE8E426A /* Pods-FBPrototype.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBPrototype.release.xcconfig"; path = "Pods/Target Support Files/Pods-FBPrototype/Pods-FBPrototype.release.xcconfig"; sourceTree = "<group>"; };
 		534C06622D5834E541701C9F /* libPods-FBPrototype.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FBPrototype.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6064AD341BBAD4C500ED65F3 /* FBFunLoginDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFunLoginDialog.h; sourceTree = "<group>"; };
+		6064AD351BBAD4C500ED65F3 /* FBFunLoginDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFunLoginDialog.m; sourceTree = "<group>"; };
+		6064AD361BBAD4C500ED65F3 /* FBFunLoginDialog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FBFunLoginDialog.xib; sourceTree = "<group>"; };
 		60E4B39B1BB596F90005A213 /* FBPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60E4B39F1BB596F90005A213 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60E4B3A01BB596F90005A213 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -107,6 +112,9 @@
 				60E4B3B01BB596F90005A213 /* LaunchScreen.xib */,
 				60E4B3A51BB596F90005A213 /* FBPrototype.xcdatamodeld */,
 				60E4B39E1BB596F90005A213 /* Supporting Files */,
+				6064AD341BBAD4C500ED65F3 /* FBFunLoginDialog.h */,
+				6064AD351BBAD4C500ED65F3 /* FBFunLoginDialog.m */,
+				6064AD361BBAD4C500ED65F3 /* FBFunLoginDialog.xib */,
 			);
 			path = FBPrototype;
 			sourceTree = "<group>";
@@ -231,6 +239,7 @@
 				60E4B3AD1BB596F90005A213 /* Main.storyboard in Resources */,
 				60E4B3B21BB596F90005A213 /* LaunchScreen.xib in Resources */,
 				60E4B3AF1BB596F90005A213 /* Images.xcassets in Resources */,
+				6064AD381BBAD4C500ED65F3 /* FBFunLoginDialog.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60E4B3A41BB596F90005A213 /* AppDelegate.m in Sources */,
+				6064AD371BBAD4C500ED65F3 /* FBFunLoginDialog.m in Sources */,
 				60E4B3A11BB596F90005A213 /* main.m in Sources */,
 				60E4B3AA1BB596F90005A213 /* ViewController.m in Sources */,
 				60E4B3A71BB596F90005A213 /* FBPrototype.xcdatamodeld in Sources */,

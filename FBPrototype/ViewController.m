@@ -5,8 +5,11 @@
 //  Created by Marek Tomaszewski on 25/09/2015.
 //  Copyright (c) 2015 CodeImagination. All rights reserved.
 //
-//somechanges
+
 #import "ViewController.h"
+
+
+
 
 @interface ViewController ()
 

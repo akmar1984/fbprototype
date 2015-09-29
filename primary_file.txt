@@ -1,3 +1,8 @@
-The first file that Ive added to our project
+The first file that Ive added to our project 222
 
 It comes before all other files.
+It's showing me pages of results and in fact if I scroll this up like this, you can see that it's now asking me. Here, it's prompting me, waiting for me to hit the spacebar to show me the rest of the results, and I can use F and B to go forwards and backwards through those results. What this is the less pager that's built into UNIX. So I'm using the less pager to see these results. The less pager has a feature where I can either start it up using the -R command, and you can set that in your global configuration or while I'm inside of it I can press the minus key and then Shift+S and then hit Return, and it will fold those long lines.
+
+So to wrap it around instead of having the lines be truncated. And if I want to switch it back -S and Return chops the long lines instead. Now as I said that is something you can use a configuration for in your config file if you wanted to always be that way. So it's really up to you and how you like to work. Notice here we can see the change between these lines really easily, 4315 got changed to 4314. I am going to hit Quit. We are going to do the git diff again just like we did before, but this time I am going to add in an option here which is color-words.
+
+So git diff with the option color-words contact.html. Now notice that it comes up, and it gives me that same information, but instead of having two separate lines it gave me a different format, and it put the change here side by side. This is just one of many options that you can use with a diff to get it to show you information in a different way. So if you prefer instead of saying one line above the other, you prefer having it actually color the output for you so you can see the difference between them, you can use the color-words option. So we have seen
